@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>SampleClass.Md5VsSha256-20241015-184354</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.22621.4169/22H2/2022Update/SunValley2)
+12th Gen Intel Core i5-1235U, 1 CPU, 12 logical and 10 physical cores
+.NET SDK 8.0.403
+  [Host]     : .NET 8.0.10 (8.0.1024.46610), X64 RyuJIT AVX2
+  DefaultJob : .NET 8.0.10 (8.0.1024.46610), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th>
+</tr>
+</thead><tbody><tr><td>Sha256</td><td>5.521 &mu;s</td><td>0.2847 &mu;s</td><td>0.7745 &mu;s</td><td>5.290 &mu;s</td>
+</tr><tr><td>Md5</td><td>21.236 &mu;s</td><td>0.4742 &mu;s</td><td>1.2575 &mu;s</td><td>21.020 &mu;s</td>
+</tr></tbody></table>
+</body>
+</html>
